@@ -3,118 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Erica Veilleux's CV showcasing education, experience, and skills in game art and development.">
+    <meta name="keywords" content="CV, resume, game art, development, graphic design, education, skills">
+    <meta name="author" content="Erica Veilleux">
+    <link rel="stylesheet" href="style.css">
     <title>CV</title>
-    <!--I understand CSS is best for styling on another file, it is easier 
-    to keep them together above the body, but it does take up an 
-    unnecessary amount of space -->
-    <style>
-        img {
-            border: 2px orange solid;
-            border-radius: 50px;
-            height: 150px;
-            width: 150px;
-            display: block;
-            margin: 0 auto;
-        }
-        h1  {
-            text-align: center;
-            font-family: cursive;
-        }
-        h2 {
-            text-align: center;
-            font-family: cursive;
-        }
-        a {
-            display: block;
-            text-align: center;
-        }
-        h3 {
-            font-family: cursive;
-            text-align: center;
-        }
-        h3.ex {
-            text-align: center;
-            font-family: cursive;
-        }
-        p1 {
-            font-family: cursive;
-            text-align: left;
-        }
-        p {
-            text-align: center;
-            font-family: cursive;
-
-        }
-        table, th, td {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-        .container {
-            border-radius: 5px;
-            background-color: #d3d3d3;
-            padding: 20px;
-        }
-        input[type=text], select, textarea {
-            width: 100%;
-            padding: 9px;  
-            border-radius: 4px; 
-            margin-top: 6px; 
-            margin-bottom: 16px; 
-            resize: vertical ;
-        }
-        
-    </style>
 </head>
 <body>
     <header>
         <!--This is an old picture-->
-        <img src="me.jpg" alt="picture of me">
+        <img src="me.jpg" alt="picture of me" class="profile-pic">
     </header>
-    <hr color="orange">
+    <hr>
         <h1>Erica Veilleux</h1>
         <!--Current email-->
-        <a href="mailto:ladyshiva42@yahoo.com">&#9993;ladyshiva42@yahoo.com</a>
-    <hr color="orange">    
-        <!--Made use of many heading sizes-->
+        <a href="mailto:ladyshiva42@yahoo.com" class="email">&#9993;ladyshiva42@yahoo.com</a>  
+        <hr>   <!--Made use of many heading sizes-->
         <h2>Tech-savvy design student. <br> 
         The "big picture" is made up of small pieces; both perspectives matter.</h2>
     </main>
-    <hr color="orange">
-    <section>
+    <section class="education">
         <!--wanted a clean look and separation. This sections shows which schools I've attended and which are in progress. -->
         <!--Update: Removed Vertical Line and added Sections for a better view.-->
         <h3>Education</h3>
-        <a href="https://www.snhu.edu/">Southern New Hampshire University</a>
-        <p>B.A. Game Art & Development + Minor Graphic Design</p>
-        <p style="color: red;"><strong>In Progress</strong></p>
-        <p><i>2021-2026 EST</i></p><hr>
-        <a href="https://www.csn.edu/">College of Southern Nevada</a>
+        <a href="https://www.snhu.edu/" class="edu">Southern New Hampshire University</a>
+        <p>B.A. Game Art & Development <br> + Minor Graphic Design</p>
+        <p class="date"><i>2021-2026 EST</i></p>
+        <p class="pro"><strong>In Progress</strong></p>
+        <hr color="redorange">
+        <a href="https://www.csn.edu/" class="edu">College of Southern Nevada</a>
         <p>Associates of Arts</p>
-        <p><i>2009-2011</i></p>
-        <hr>
+        <p class="date"><i>2009-2011</i></p>
+        <hr color="redorange">
         <!--This area is meant for the projects I've done for class.-->
         <!--Update: Forgot to add infographic.-->
         <p>To Showcase My Basic Design Knowledge</p>
         <center>&darr;</center>
         <a href="Coffee_Shop.html">COA Flyer</a>
-        <hr>
+        <hr color="redorange">
         <p>Created a Prop In Maya</p>
         <center>&darr;</center>
         <a href="Maya.html">AutoDesk Maya</a>
-        <hr>
+        <hr color="redorange">
         <p>From Maya to Mudbox</p>
         <center>&darr;</center>
         <a href="Mudbox.html">Autodesk Mudbox</a>
-        <hr>
+        <hr color="redorange">
         <p>Basic Infograph</p>
         <center>&darr;</center>
         <a href="Infograph.html">Infograph</a>
         
     </section>
     <!--Here is my work life in the last few years.-->
-    <hr color="orange">
-    <section>
-        <div style="text-align: center;">
+    <hr>
+    <section class="experience">
+        
             <ul style="display:inline-block; text-align: left;">
             <h3>Previous Experience</h3>
         <ul>
@@ -138,11 +82,10 @@
                 <li>Warehouse Associate (.5 year)</li>
             </ol>    
         </ul>
-    </div>
     </section>
     <!--Table is added to showcase level of experience with certain programs.-->
-    <table style="width: 65%; border-collapse: collapse; text-align: center; margin: 0 auto;">
-        <caption><h3>Skills</h3></caption>
+    <table class="skills">
+        <caption><h3 class="skills">Skills</h3></caption>
             <thead>
                 <tr>
                     <th>Program</th>
@@ -207,7 +150,7 @@
     <section>
         <!--Update: Added contact form-->
         <h3>Thank you for viewing my resume.</h3>
-        <h2 style="color:#ff5349"><b>Feel free to contact me!</b></h2>
+        <h2 class="contact"><b>Feel free to contact me!</b></h2>
         <div class="container">
             <form action="action_page.php">
 
